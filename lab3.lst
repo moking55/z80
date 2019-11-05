@@ -1,0 +1,26 @@
+Z80 MACRO ASSEMBLER    Version 2.1          (c) 1987-2004 Peter J. Fondse
+
+Date: 29 Oct 2019      Time: 15:59:47       Source: c:\documents and settings\admin\desktop\z80\hee\lab3.hex
+
+8000                   1           ORG 8000H
+8000                   2   START:
+8000  3E 4F            3           LD A,4FH
+8002  06 00            4           LD B,00
+8004  26 80            5           LD H,80H
+8006  2E F0            6           LD L,0F0H
+8008  77               7           LD (HL),A
+8009  DD 77 01         8           LD (IX+1),A
+800C  DD 70 02         9           LD (IX+2),B
+800F  DD 77 FF        10           LD (IX+0FFH),A
+      00 80           11           END START
+
+Assembly errors: 0      
+
+SYMBOL TABLE
+
+Symbol    Value    
+---------------    
+START      8000    
+
+
+
